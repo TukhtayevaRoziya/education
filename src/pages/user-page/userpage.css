@@ -1,0 +1,55 @@
+.container-user
+{
+    width: 100%;
+    padding: 1rem;
+}
+.imtihon-vaqti
+{
+    width: 100%;
+    background-color: red;
+    display: none;
+}
+.suhbat
+{
+    width: 100%;
+    margin-top: 10rem;
+    padding: 2rem;
+}
+.suhbat form button
+{
+    width: 120px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.suhbat form label
+{
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.about-user
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.about-user img
+{
+    width: 100px;
+    height: 100px;
+}
+.user__title{
+    width: 100%;
+    text-align: center;
+}
+.user__adress{
+    font-size: 20px;
+    text-align: center;
+}

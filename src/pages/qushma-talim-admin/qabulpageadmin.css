@@ -1,0 +1,201 @@
+.container-qabuladmin
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#arizalarmain-header
+{
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbaradmin
+{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    background-color: rgb(0, 145, 255);
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#checkbox, 
+#checkboxlabel
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.category p
+{
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories
+{
+    width: 100%;
+    margin-top: .5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#navbar
+{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.category
+{
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-align: center !important;
+    justify-content: center;
+    padding: 1rem;
+    transition: .2s linear;
+    color: white;
+}
+.active
+{
+    color: rgb(0, 145, 255);
+}
+.activeslider
+{
+    background-color: white;
+    width: 98%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    transition: .3s linear;
+}
+.topshiruvchi
+{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    flex-wrap: wrap;
+    border: 1px solid rgb(0, 145, 255);
+    overflow: hidden;
+    padding: 5px;
+    margin: .5rem;
+    transition: .1s linear;
+}
+.topshiruvchi:hover
+{
+    background-color: lightblue;
+    border: 1px solid transparent;
+}
+#topshiruvchiimg
+{
+    width: 40px;
+    height: 40px;
+}
+.oqilganmain,
+.oqilmaganmain,
+.atkazmain,
+.arizalarmain
+{
+    display: none;
+}
+.main
+{
+    width: 100%;
+}
+.visible
+{
+    display: flex !important;
+    flex-direction: column;
+}
+.mainadmin
+{
+    width: 80%;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+@media screen and (max-width: 900px) {
+    .container-qabuladmin
+    {
+        flex-direction: column;
+    }
+    .mainadmin
+    {
+        top: 100px;
+    }
+    .navbaradmin, .categories
+    {
+        width: 100%;
+        min-height: 100px !important;
+        display: flex;
+        flex-direction: row !important;
+    }
+    .category
+    {
+        width: 22%;
+        background-color: white;
+        color: rgb(0, 145, 255);
+        margin: .5rem;
+        border-radius: 10px;
+        padding-top: 2rem;
+    }
+    .category p
+    {
+        font-size: 15px !important;
+    }
+    .active
+    {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        width: 24%;
+    }
+    .activeslider
+    {
+        display: none;
+    }
+    .mainadmin
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .navbaradmin
+    {
+        display: block;
+    }
+    #navbar
+    {
+        display: block;
+    }
+}

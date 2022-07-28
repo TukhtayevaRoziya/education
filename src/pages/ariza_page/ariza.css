@@ -1,0 +1,327 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: scroll !important;
+}
+.container-qabul
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper-qabul
+{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  gap: 50px;  border: 1px solid rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
+  background-color: transparent;
+  padding: .5rem;
+  margin-top: 3rem;
+}
+.inputs-wrapper
+{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  width: 45%;
+  padding: .5rem;
+}
+.inputs-wrapper #form
+{
+  display: flex;
+  align-items: center;
+}
+#akatatsana, 
+#akatatsanalabel
+{
+  display: none;
+}
+.inputs-wrapper #form #akatatha,
+.inputs-wrapper #form #akatatyoq
+{
+  width: 15px;
+}
+.address
+{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#hztlb
+{
+  width: 20px;
+  margin: 0;
+  height: 20px;
+  margin-left: .5rem;
+}
+#hztlb
+{
+  width: 20px;
+  margin: 0;
+  height: 20px;
+  margin-left: .5rem;
+}
+ .wrapper-qabul .inputs-wrapper label
+{
+  margin: .5rem;
+}
+ .wrapper-qabul .inputs-wrapper input
+{
+  width: 75%;
+  margin: .5rem;
+  height: 30px;
+  border: none;
+  transition: .1s linear;
+  outline: none;
+  border-bottom: 3px solid rgb(0, 115, 255);
+  background-color: rgba(167, 165, 165, 0.15);
+}
+#submit
+{
+  border: 2px solid transparent !important;
+  background-color: rgb(0, 115, 255) !important;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+#submit:hover
+{
+  background-color: transparent !important;
+  border-color: rgb(0, 115, 255) !important;
+  color: rgb(0, 115, 255);
+  border-radius: 5px;
+}
+#submit:active
+{
+  border-color: transparent !important;
+}
+.wrapper-qabul .inputs-wrapper button
+{
+  width: 75%;
+  margin: .5rem;
+  height: 30px;
+  border: none;
+  transition: .1s linear;
+  outline: none;
+  border-bottom: 3px solid rgb(0, 115, 255);
+  background-color: rgba(167, 165, 165, 0.15);
+}
+.wrapper-qabul .inputs-wrapper select
+{
+  width: 75%;
+  margin: .5rem;
+  height: 30px;
+  border: none;
+  transition: .1s linear;
+  outline: none;
+  border-bottom: 3px solid rgb(0, 115, 255);
+  background-color: rgba(167, 165, 165, 0.15);
+}
+ .wrapper-qabul .inputs-wrapper input:focus
+{
+  background-color: white;
+  border: 2px solid rgb(0, 115, 255);
+}
+.hujjat
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+.hujjat-top
+{
+  float: right;
+  margin: 10px;
+  align-self: flex-end;
+  width: 400px;
+}
+.hujjat-top span,
+.hujjat-main span
+{
+  font-weight: 200 !important;
+}
+.hujjat-main
+{
+  width: 100%;
+  padding: 1rem;
+}
+.hujjat-main h2
+{
+  margin-left: 50%;
+}
+@media screen and (max-width: 900px) {
+  .wrapper-qabul
+  {
+    gap: 0px;
+  }
+  .inputs-wrapper
+  {
+    width: 100%;
+  }
+  .hujjat-top
+  {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wrapper-qabul
+  {
+    width: 95%;
+  }
+ .wrapper-qabul .inputs-wrapper input,
+ .wrapper-qabul .inputs-wrapper select,
+ .hujjat
+{
+  width: 98%;
+}
+}
+.alert__text{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+.alert__success{
+  color: green;
+  opacity: 1;
+  transition: .5s ease-out;
+}
+.alert__error{
+  color: red;
+  opacity: 1;
+  transition: .5s ease-out;
+}
+.pdf-qushmatalim
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 1200px !important;
+  width: 1200px;
+  background-color: white;
+  margin-top: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: .00001;
+  z-index: -99999;
+}
+.pdf-header
+{
+  min-width: 1200px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.pdf-logo
+{
+  min-width: 100px;
+  width: 100px;
+  margin: 1rem;
+}
+.pdf-logo img
+{
+  width: 100%;
+}
+.pdf-header-text
+{
+  min-width: 500px;
+  width: 500px;
+  max-height: 300px;
+  margin: 1rem;
+
+}
+.pdf-main-header
+{
+  min-width: 900px;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+#kochaa
+{
+  position: absolute;
+  width: 1px;
+  bottom: -980px;
+  right: -170px;
+  opacity: .01;
+  z-index: -1;
+}
+.pdfabout-abitur
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  min-width: 800px;
+  width: 800px;
+  margin-top: 3rem !important;
+  margin: 0 auto;
+}
+.pas-mal
+{
+  margin-top: 3rem !important;
+  min-width: 600px;
+  width: 600px;
+}
+.tal-yonal
+{
+  width: 800px;
+  min-width: 800px;
+  display: flex;
+  margin-top: 3rem !important;
+  flex-direction: column;
+}
+.tal-yonal-main
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tal-yon-til-shak
+{
+  min-width: 380px;
+  width: 380px;
+}
+.fak
+{
+  min-width: 380px;
+  width: 380px;
+}
+.pdf-qushmatalim h3,
+.pdf-qushmatalim h4
+{
+  font-weight: 500;
+}
+.eslatma
+{
+  width: 300px;
+  float: right;
+  text-align: center;
+  margin-top: 5rem;
+}
+.eslatma span
+{
+  color: red;
+}
